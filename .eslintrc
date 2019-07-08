@@ -1,0 +1,52 @@
+{
+  "extends": [
+      "airbnb-base",
+      "prettier"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 6
+  },
+  "env": {
+      "browser": true,
+      "node": true,
+      "jquery": true,
+      "es6": true
+  },
+  "rules": {
+      "comma-dangle": [
+          "error",
+          {
+              "arrays": "only-multiline",
+              "objects": "only-multiline",
+              "imports": "never",
+              "exports": "never",
+              "functions": "ignore"
+          }
+      ],
+      "no-unused-vars": [
+          "error",
+          {
+              "vars": "local",
+              "args": "none"
+          }
+      ],
+      "no-console": "off",
+      "no-use-before-define": "off",
+      "no-param-reassign": [
+          "error",
+          {
+              "props": false
+          }
+      ]
+  },
+  "settings": {
+      "import/resolver": {
+          "node": {
+              "moduleDirectory": "node_modules"
+          }
+      }
+  },
+  "plugins": [
+      "prettier"
+  ]
+}
