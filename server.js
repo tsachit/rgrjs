@@ -11,10 +11,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-console.log(schema);
-
 let db;
-
 MongoClient.connect(process.env.MONGO_URL, (err, client) => {
     if(err) throw err;
 
